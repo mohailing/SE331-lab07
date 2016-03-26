@@ -22,6 +22,7 @@ import java.util.Locale;
 public class AppConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        System.out.println("");
         registry.addResourceHandler("/**").addResourceLocations("/views/").setCachePeriod(31556926);
         registry.addResourceHandler("/js/**").addResourceLocations("/views/js/").setCachePeriod(31556926);
         registry.addResourceHandler("/bower_components/**").addResourceLocations("/views/bower_components/");
